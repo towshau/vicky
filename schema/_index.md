@@ -4,7 +4,7 @@
 | public.admin_onboarding_tasks |  | 53 | Tracks onboarding tasks for staff members |
 | public.admin_roles |  | 1 | Configuration table for admin role assignments |
 | public.admin_sop |  | 0 |  |
-| public.admin_tickets |  | 99 |  |
+| public.admin_tickets |  | 100 |  |
 | public.allcontacts_hubspot |  | 142 |  |
 | public.audit_revenue_team_updates |  | 0 |  |
 | public.biomap_measurement_dimensions |  | 0 | Core dimension types for measurements (e.g., concentration, ratio, activity) |
