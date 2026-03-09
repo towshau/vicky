@@ -1,0 +1,30 @@
+# Cursor rules for the Vicky repo (Lockeroom Second Brain)
+
+You are working in the Vicky second brain repository. This repo is the source of truth for Lockeroom Gym's business rules, schema documentation, SOPs, and reference data. It is consumed by AI agents (n8n, Claude API) and by humans.
+
+## Repo structure
+
+- **rules/** — Business rules by domain (memberships, coaching, billing, scheduling, programming, physicals, sales, hr, operations). Each folder has a README; load only the rule files needed for the question.
+- **schema/** — Database docs. schema/_index.md lists all tables; schema/core/ has detailed docs for the 14 core tables.
+- **sops/** — Standard operating procedures by role (coaching, sales, admin, management).
+- **reference/** — Lookup data (membership types, enums, staff roles, site config).
+- **_agent/** — AGENT_INSTRUCTIONS.md and domain-map.md tell agents how to navigate and what to load.
+- **SOUL.md** — Vicky's personality and communication style; agents acting as Vicky must follow it.
+
+## When editing
+
+- Use lowercase, hyphenated filenames. Every folder has a README.md as the index.
+- Rule files use YAML frontmatter (title, domain, version, effective_date, applies_to, last_updated, status, tags). Use _templates/rule.md when creating new rules.
+- When you add or change a rule or SOP, add a CHANGELOG.md entry and suggest updating last_updated in the rule's frontmatter.
+- Do not guess at business logic. If a rule is missing or unclear, say so and point to the gap rather than inventing content.
+
+## Schema and Supabase
+
+- Schema docs in schema/ reflect the Lockeroom Supabase project. Column names, types, and relationships in schema/core/*.md should match the database. reference/enums.md and reference/membership-types.md are refreshed from Supabase (see MAINTENANCE.md).
+- When answering questions about members, memberships, coaches, or billing, prefer citing a rule file or schema doc over free-form reasoning.
+
+## Naming and conventions
+
+- Folders: lowercase, hyphenated (e.g. holds-policy.md, member-database.md).
+- No prefixes in filenames — the folder gives context.
+- Frontmatter tags: lowercase, hyphenated.
