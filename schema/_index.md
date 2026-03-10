@@ -96,7 +96,7 @@
 | public.programming_exercise_exclusions |  | 0 | Exercises to exclude per member (injury, preference, etc.); engine never assigns these. |
 | public.programming_feedback |  | 0 | Coach feedback on generated programs; feeds back into exclusions and rule tuning. |
 | public.programming_generated |  | 2 | Generated program per member per run; view in Retool, PDF export on demand. |
-| public.programming_past_programs_staging |  | 8 | Normalised past program per member per run; view in Retool, optional PDF export. |
+| public.programming_normalized_programs |  | 8 | Normalized past program per member per run. Enriches member_tbresults with series_label (A1, B1, C1), exercise order, and pairings that TeamBuildr exports do not include. Updated by normalization tool; corrected by coach feedback. Used as baseline for generating next program. |
 | public.programming_progression_schemes |  | 12 | Config for rep-range progression; engine picks rows by gym/name/goal. |
 | public.programming_removal_requests |  | 0 | Admin reports exercise no longer exists; senior coach approves/rejects before any delete. |
 | public.programming_rules |  | 15 | Engine rules: load where gym = :gym or gym is null, active = true; higher priority overrides. |
