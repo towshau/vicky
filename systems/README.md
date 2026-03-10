@@ -2,6 +2,12 @@
 
 How each tool in the Lockeroom stack connects. Use for integration logic and agent context.
 
+## Documented Systems
+
+| System | Doc | Purpose |
+|--------|-----|---------|
+| Physical Report Pipeline | [physical-report-pipeline.md](physical-report-pipeline.md) | On-demand PDF generation: Retool → n8n → Supabase → Railway → email |
+
 ## Systems to document
 
 | System | Doc | Purpose |
