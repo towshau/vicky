@@ -18,6 +18,7 @@ Vicky is the operational intelligence behind Lockeroom Gym. She lives in the sys
 - **SOPs** — Standard operating procedures (how to do things) in [sops/](sops/), grouped by role (coaching, sales, admin, management).
 - **Reference** — Static lookup data (membership types, enums, site config) in [reference/](reference/).
 - **Agent instructions** — How AI agents should use this repo: [_agent/AGENT_INSTRUCTIONS.md](_agent/AGENT_INSTRUCTIONS.md) and [_agent/domain-map.md](_agent/domain-map.md).
+- **Skills** — Reusable agent capabilities (diagrams, imports, image generation) in [_agent/skills/](_agent/skills/). See [_agent/skills/README.md](_agent/skills/README.md) for when to use which skill.
 
 ## Key Files at Root
 
